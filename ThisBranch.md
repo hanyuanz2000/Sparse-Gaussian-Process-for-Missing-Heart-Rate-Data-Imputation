@@ -14,3 +14,5 @@ https://docs.gpytorch.ai/en/stable/examples/01_Exact_GPs/Simple_GP_Regression.ht
 https://docs.gpytorch.ai/en/latest/kernels.html
 
 Kernels in GPyTorch are implemented as a gpytorch.Module that, when called on two torch.Tensor objects  x_1 and x_2, returns either a torch.Tensor or a LinearOperator that represents the covariance matrix between x_1 and x_2.
+
+### GP Sklearn with small, medium, and large datasets

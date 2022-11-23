@@ -1,4 +1,4 @@
-## About SKI
+##  About SKI
 http://proceedings.mlr.press/v37/wilson15.pdf
 
 We introduce a new structured kernel interpolation (SKI) framework, which generalises

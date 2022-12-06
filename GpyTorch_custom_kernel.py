@@ -26,10 +26,10 @@ class FirstSincKernel(gpytorch.kernels.Kernel):
     # this is the kernel function
     def forward(self, x1, x2, **params):
         # calculate the distance between inputs
-        diff = self.covar_dist(x1, x2, **params)
-        print('diff1', diff)
+        diff = self.covar_dist(x1, x2, **params)[0][0]
+        print('before where:', diff)
         # prevent divide by 0 errors
-        diff.where(diff == 0, 2*diff)
-        print('diff2', diff)
+        diff = diff.where(diff < 1e-20, torch.as_tensor(3))
+        print('after where:', diff)
         # return sinc(diff) = sin(diff) / diff
         return torch.sin(diff).div(diff)

@@ -11,7 +11,7 @@ The 2 most experiments are in Experiments A.ipynb and Experiment B.ipynb. They a
 ## Experiment A.ipynb
 In this set of experiments, we are going to discuss how below the 3 factors influence the performance and training speed of our Gaussian process models. They are 1. kernel choice 2. inducing model choice 3. whether to include LOVE. To inverstigate the training speed of different inducing model choice, we use 1000 data points in this set of experiment.
 
-## Experimemt B.ipynb
+## Experiment B.ipynb
 In this set of experiments, we are conducting experiments to explore the train size and test size going to influence the performance and training speed of our Gaussian process models. Fixing the kernel choice as RBF or RBF + Periodic, inducing model as full GP, we range the testing size from 0.1 to 0.9 (No LOVE). To speed up the training process, we only use 600 data points in this set of experiments.
 
 ## Experiment Large Interval.ipynb and Experiment Large Interval with LOVE.ipynb
@@ -32,5 +32,5 @@ Contains the heart rate data we collected from MIT-BIH.
 ## Sparse Gaussian Process for Missing Heart Rate Time.pdf
 Report of our findings
 
-
-
+# environment.yml
+package version list for this project. 
